@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>SEHAR ZAMAN</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width = device-width, initial-scale=1.0s">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="banner">
+        <h2 class="mainlogo" data-maxheight="14" style="font-size: 14px; height: 14px; line-height: 14px;">SEHAR ZAMAN</h2>
+        <div class="banner-text">
+            <p3><span class="yellow-text">std::cout <<</span>  "Hi, I'm Sehar Zaman – An Artificial Intelligence Engineer at Your Service !" <span class="yellow-text"><< std::endl;</span> </p3>
+        </div>
+        <div class="down-arrow">
+            <a href="#feature"><img src="images/arrow.png" alt="Scroll Down"></a>
+        </div>
+    </section>
+
+<script>
+document.querySelector('.down-arrow a').addEventListener('click', function (event) {
+event.preventDefault();
+
+const targetSection = document.querySelector(this.getAttribute('href'));
+const targetPosition = targetSection.offsetTop;
+const currentPosition = window.pageYOffset;
+const distance = targetPosition - currentPosition;
+
+const duration = 1000; // Adjust the duration of the scroll
+
+const startTime = performance.now();
+function scroll(time) {
+    const elapsed = time - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = easeOutCubic(progress);
+
+    window.scrollTo(0, currentPosition + distance * ease);
+
+    if (progress < 1) {
+        requestAnimationFrame(scroll);
+    }
+}
+
+function easeOutCubic(t) {
+    return (--t) * t * t + 1;
+}
+
+requestAnimationFrame(scroll);
+});
+</script>        
+
+<div id="bottomNav">
+<nav>
+    <ul>
+        <li><a href="projects.html" data-tab="projects">PROJECTS</a></li>
+        <li><a href="conatact.html" data-tab="conatact">CONTACT</a></li>
+    </ul>    
+</nav>
+</div>
+
+<!--features-->
+<section id="feature" >
+<div class="title-text">
+</div>
+<div class="feature-box">
+<div class="features">
+    
+    <div class="feature-desc">
+        <div class="feature-text ">
+            <p>Hello there, AI enthusiast!!</p>
+            <p>Imagine a world where AI takes the helm, where algorithms are the brushes, and data is the canvas awaiting the touch of innovation.</p>
+            <p>This is the realm I've been exploring throughout my academic journey at Bahria University, Islamabad, where I am diving deep into the captivating world of Artificial Intelligence. But wait, there's more to my story! I'm not just a student; I'm a curious explorer, a problem solver, and a visionary, all rolled into one.</p>
+            <p>And here's a little secret: I don't settle for the ordinary. Why stick to the status quo when I can infuse my own brand of fascination and ingenuity into the mix?</p>
+            <p>My friends, here's the deal: I believe that within each of us lies the power of design thinking, and with AI as our tool, we can craft a future that's nothing short of extraordinary.</p>
+            <p2>Here's to the thrilling journey of creativity!</p2>
+        </div>
+    </div>
+</div>
+<div class="features-img" >
+    <img src="images/image0.jpeg">
+</div>
+</div>
+</section>
+<section id="footer">
+<div class="Title-text">
+<p>All work © Sehar Zaman 2023</p>
+</section>
+</body>
+</html>

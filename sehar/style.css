@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+    }
+    #banner {
+        background: rgb(0, 0, 0);
+        background-size: cover; /* Adjust the percentage to control the visible area of the background */
+        background-position: center;
+        height: 100vh; /* Adjust the percentage to control the height of the element */
+        animation: colorCycle 10s linear infinite;
+    }
+    @keyframes colorCycle {
+        0% {
+          background-color: black;
+        }
+        25% {
+          background-color: rgba(58, 37, 10, 0.579); /* Change to your desired color */
+        }
+        50% {
+          background-color: rgba(9, 54, 31, 0.819); /* Change to your desired color */
+        }
+        75% {
+          background-color: rgba(44, 11, 59, 0.705); /* Change to your desired color */
+        }
+        100% {
+          background-color: rgb(0, 0, 0);
+        }
+      }
+      
+    .mainlogo{
+        width: 140px;
+        position: absolute;
+        top: 4%;
+        left: 2%;
+        color: rgb(255, 255, 255);
+        font-family: 'Playfair Display';
+        font-size: 20px;
+    }
+    .banner-text{
+        text-align: center;
+        color: #347d93ce;
+        padding-top: 350px;
+        font-size: 30px;
+        font-style: bold;
+        font-family: 'Playfair Display';
+        
+    }
+    
+    .banner-btn{
+        font-family: 'Playfair Display';
+        margin: 50px auto 0;
+        padding-top: 53px;
+        font-size: 28px;
+        padding-right: 10px;
+    }
+    
+    .banner-btn a{
+    width: 200px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.579);
+    color:#ffffff;
+    border: .5px solid rgba(0, 0, 0, 0.579);
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    }
+    
+    .down-arrow {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .down-arrow img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    
+    .down-arrow img:hover {
+        transform: translateY(3px); /* Add a subtle lift effect on hover */
+    }
+    
+    #bottomNav {
+        text-align: center;
+        background-color: #ffffff; 
+    }
+    
+    #bottomNav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+    
+    #bottomNav li {
+        display: inline-block;
+        margin: 0;
+    }
+    
+    #bottomNav a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    #bottomNav a:hover {
+        background-color: rgba(0, 0, 0, 0.579);
+        color: #000000;
+    }
+
+    /*--feature--*/
+
+#feature{
+    background-color: #000000;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20ps;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text h1{
+    font-size: 50px;
+    color: #ffffff;
+    
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+    position: relative;
+    z-index: 2;
+}
+.features-img{
+    flex-basis: 50%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    
+}
+.features-img img {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 400px;
+    height: 400px; /* Set the height and width to be the same for a perfect circle */
+    border-radius: 50%; /* Apply a circular border-radius */
+    object-fit: cover; /* Maintain aspect ratio while covering the circular container */
+    object-position: center top; /* Adjust the image position as needed */
+}
+
+
+.features h1{
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: #ffffff;
+    margin-top: -150px;
+}
+.features-desc {
+    display: flex;
+    flex-direction: column; /* Stack the text vertically */
+    align-items: flex-start; /* Align the text to the left */;
+    margin-bottom: 70px;
+    margin-top: 5%;
+}
+
+.feature-text {
+    color: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -80px;
+    font-size: 18px;
+    font-family: 'Playfair Display';
+    text-align: left;
+    
+}
+
+.yellow-text {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Playfair Display';
+}
+.blue-text {
+    color: rgb(102, 33, 33);
+    font-size: 30px;
+    font-family: 'Playfair Display';
+}
+.feature-text p1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.feature-text p2{
+    font-size: 18px;
+    
+}
+
+#footer {
+    padding: 10px 0px 20px;
+    background: rgb(255, 255, 255);
+    height: 10px; /* Adjust the height */
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Playfair Display'
+}
+
+.Title-text {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.Title-text p {
+    display: flex;
+    align-items: center; /* Adjust the spacing between text and icons */
+    color: #000000
+}
+
+
+
+
+
+
+
+body {
+    background-color: #000000;
+    text-align: center;
+}
+
+.ashmanimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 14px); /* Account for logo height */
+    overflow: hidden;
+}
+
+.project-image {
+    position: relative;
+}
+
+.project-name {
+    position: absolute;
+    bottom: -80px; /* Initially hide the project name below the image */
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    transition: bottom 0.5s ease-in-out; /* Add sliding animation */
+    opacity: 0; /* Initially hide the project name with opacity */
+    font-family: 'Playfair Display';
+    font-weight: bold;
+}
+
+.project-image:hover .project-name {
+    bottom: -4%; /* Slide up the project name on hover */
+    opacity: 1; /* Fade in the project name on hover */
+}
+
+.project-image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover; /* Maintain aspect ratio while fitting within the container */
+    margin: 10px; /* Add 10px spacing on all sides of each image */
+    border-radius: 50%; /* Apply a circular border-radius */
+    object-fit: cover; /* Maintain aspect ratio while covering the circular container */
+    object-position: center top; /* Adjust the image position as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+#banner {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#video-background {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Place the video behind other content */
+}
+
+
+#page2 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#page1 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    margin: 0 auto;
+}
+.contact-message {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #ffffff;
+    margin-top: 200px;
+    font-family: 'Playfair Display';
+}
+
+.contact-message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-message p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
